@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallerystyle.css">
+    <title>Галерея</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Об игре</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <audio autoplay loop hidden>
+        <source src="audio/Time_To_Make_History.mp3" type="audio/mpeg">
+    </audio>
+
+    <main>
+        <section class="trailer-section">
+            <h1>Трейлер игры</h1>
+            <div class="video-container">
+                
+      <iframe
+      width="720"
+      height="405"
+      src="https://rutube.ru/play/embed/763b77bcccd1f9afeb358028c5440ba8"
+      frameBorder="0"
+      allow="clipboard-write; autoplay"
+      webkitAllowFullScreen
+      mozallowfullscreen
+      allowFullScreen
+    ></iframe>
+  
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Скриншоты игры</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/awakening.gif" alt="Скриншот 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/street.jpg" alt="Скриншот 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/snow_chie.jpg" alt="Скриншот 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/teddy.gif" alt="Скриншот 4">
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Офирьский клан</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let audio = document.querySelector('audio');
+            audio.volume = 0.2;
+        }, false);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexstyle.css">
+    <title>Главная</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Об игре</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <audio autoplay loop hidden volume="1000">
+        <source src="audio/Shadow_World.mp3" type="audio/mpeg" >
+    </audio>
+
+
+    <main>
+        <section>
+            <h1>Добро пожаловать на мой сайт!</h1>
+            <p>Это многостраничный сайт, так что им можно наслаждаться вдоль и поперёк.</p><br>
+            <img src="images/chie2.jpg"> <br>   
+            <p>А это Чие Сатонака, мой любимый персонаж игры Persona 4, о которой сегодня пойдёт речь :3</p><br><br>
+            <button onclick="location.href='404.html'">Связаться со мной</button><br><br>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Офирьский клан</p>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let audio = document.querySelector('audio');
+        
+        audio.volume = 0.2;
+      }, false);
+    </script>
+
+</body>
+</html>

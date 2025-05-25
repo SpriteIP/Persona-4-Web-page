@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1ee18;
+    font-size: larger;
+}
+
+img{
+width: 29.1%;
+
+}
+
+button{
+    background-color: #9e9802;
+    font-size: x-large;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: 100%;
+    }
+}
+
+
+.error-page {
+    background-image: url("images/fon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    overflow: hidden; 
+}
+
+.error-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    position: relative; 
+    overflow: hidden; 
+}
+
+.error-title {
+    font-size: 100px;
+    color: #ff1744; 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+    animation: bounce 1s infinite;
+}
+
+.error-message {
+    font-size: 24px;
+    color: #ffffff; 
+    margin-bottom: 10px;
+}
+
+.error-submessage {
+    font-size: 18px;
+    color: #ffcc00; 
+    margin-bottom: 20px;
+}
+
+.back-home {
+    padding: 10px 20px;
+    background-color: #03a9f4; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s; 
+    font-size: 18px;
+}
+
+.back-home:hover {
+    background-color: #0288d1; 
+    transform: scale(1.1); 
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(50px); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+
+@media (max-width: 768px) {
+    .error-title {
+        font-size: 80px; 
+    }
+}
